@@ -1,4 +1,7 @@
 package Punto_1;
+
+import javax.swing.JOptionPane;
+
 public class Taller_Clase_Demo {
 	
 	public static void main(String args[]) {
@@ -6,7 +9,7 @@ public class Taller_Clase_Demo {
 		FuncionCuadratica cuadratica = new FuncionCuadratica(1, 2, 3);
 		FuncionCubica     cubica     = new FuncionCubica(1,2,3,4);
 		
-		int opcion = 2;
+		int opcion = 1;
 		
 		if (opcion == 1) {
 			cuadratica.evaluarFuncion(4);
@@ -19,6 +22,8 @@ public class Taller_Clase_Demo {
 			cubica.derivarFuncion(3);
 			cubica.integrarFuncion(1, 4);
 		}
+		
+		else JOptionPane.showMessageDialog(null, "Error: Opcion no valida");
 		
 	}
 
